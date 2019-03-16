@@ -8,15 +8,15 @@ var rover = {
 }
 
 var grid = [
+  [null,null,null,null,null,null,obstacle,null,null,null],
+  [null,null,null,null,null,null,null,null,null,obstacle],
+  [null,null,null,null,obstacle,null,null,null,null,null],
+  [null,obstacle,null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null,obstacle,null],
+  [null,null,null,null,obstacle,null,null,null,null,null],
+  [null,null,null,null,null,null,obstacle,null,null,null],
   [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
-  [null,null,null,null,null,null,null,null,null,null],
+  [null,obstacle,null,null,null,null,null,null,null,null],
   [null,null,null,null,null,null,null,null,null,null],
 
 ]
@@ -92,7 +92,7 @@ function moveForward(rover,grid){
         console.log("moveForward was called")
       }
  
-      else {
+      else { 
       console.log("Warning! Going out of bounds")
       }
     break;
